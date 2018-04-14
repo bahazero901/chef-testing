@@ -5,8 +5,8 @@
 # Copyright:: 2018, The Authors, All Rights Reserved.
 
 ["wget", "curl", "tree"].each do |tool|
-    package tool do
-    end
+  package tool do
+  end
 end
 
 group 'docker' do
