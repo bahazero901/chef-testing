@@ -9,16 +9,7 @@
   end
 end
 
-group 'docker' do
-  action :create
-  append true
-end
- 
-user 'mfeng' do
-  comment "Matt's Admin account"
-  home '/home/mfeng'
-  group 'docker'
-  shell '/bin/bash'
-  password 'testing'
-  action :create
-end
+ip = '10.10.0.0/24' 
+mask = netmask(ip) # here we use the library method as define in the class Chef::Recipe (extending Recipe Chef)
+Chef::Log.info("Netmask of #{ip}: #{mask}") 
+

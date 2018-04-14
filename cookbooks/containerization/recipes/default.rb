@@ -11,10 +11,10 @@ package "Install Docker" do
   when 'ubuntu', 'debian'
     package_name 'docker-io'
   end  
-  #notify :run, 'service[docker]', :immediately
+  notify :run, 'service[docker]', :immediately
 end
 
 service 'docker' do
-  #action [:nothing]
-  action [:start, :enable]
+  action [:nothing]
+  #action [:start, :enable]
 end
