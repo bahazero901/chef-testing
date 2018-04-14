@@ -1,6 +1,6 @@
-Generated at 2018-04-14 01:27:43 -0700
-NoMethodError: undefined method `netmask' for #<Chef::Recipe:0x00000000020b38d8>
-/home/vagrant/chef-repo/cookbooks/basic/recipes/default.rb:13:in `from_file'
+Generated at 2018-04-14 15:58:35 -0700
+NoMethodError: undefined method `example_webpage' for #<Chef::Recipe:0x00000000048f5828>
+/home/vagrant/chef-repo/cookbooks/example/recipes/mywebsite.rb:1:in `from_file'
 /opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/chef-13.8.5/lib/chef/mixin/from_file.rb:30:in `instance_eval'
 /opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/chef-13.8.5/lib/chef/mixin/from_file.rb:30:in `from_file'
 /opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/chef-13.8.5/lib/chef/run_context.rb:362:in `load_recipe_file'
