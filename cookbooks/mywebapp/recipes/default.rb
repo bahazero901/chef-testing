@@ -1,65 +1,22 @@
-#
-# Cookbook:: mywebapp
-# Recipe:: default
-#
-# Copyright:: 2018, The Authors, All Rights Reserved.
+#recipe using a custom resource
 
-node.default['webapp']['user'] = 'earlwaud'
-node.default['webapp']['group'] = 'wheel'
+package 'httpd' do
+end
 
-
-#mkdir -p /var/www/users
-directory '/var/www/users' do
-  recursive true
-  mode 0755
-  user node['webapp']['user']
-  group node['webapp']['group']
+user 'earlwaud' do
   action :create
 end
 
-file '/var/www/users/index.html' do
-  content '<html><title>Users</title><body><h1>Hello to our Users</
-   h1></body></html>'
-  mode 0755
-  user node['webapp']['user']
-  group node['webapp']['group]
-  notifies : restart, 'service[httpd]'
+
+#playbook-name_custom-resourcename
+mywebapp_website 'users' do
+  title 'Users'
 end
 
-directory '/var/www/suppliers' do
-  recursive true
-  mode 0755
-  user node['webapp']['user']
-  group node['webapp']['group]
-  action :create
+mywebapp_website 'suppliers' do
+  title 'Customers'
 end
 
-file '/var/www/suppliers/index.html' do
-  content '<html><title>Suppliers</title><body><h1>Hello to our
-  Suppliers</h1></body></html>'
-  mode 0755
-  user 'earlwaud'
-  group 'wheel'
-  notifies :restart, 'service[httpd]'
-end
-   
-directory '/var/www/customers' do
-  recursive true
-  mode 0755
-  user 'earlwaud'
-  group 'wheel'
-  action :create
-end  
-
-file '/var/www/customers/index.html' do
-  content '<html><title>Customers</title><body><h1>Hello to our
-Customers</h1></body></html>'
-  mode 0755
-  user 'earlwaud'
-  group 'wheel'
-  notifies :restart, 'service[httpd]'
-end
-
-service 'httpd' do
-  action :nothing
+mywebapp_website 'customers' do
+  title 'Customers'
 end
