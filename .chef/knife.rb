@@ -7,3 +7,4 @@ node_name                "mfeng"
 client_key               "#{current_dir}/mfeng.pem"
 chef_server_url          "https://chefnode1/organizations/test"
 cookbook_path            ["#{current_dir}/../cookbooks"]
+knife[:editor]="vim"

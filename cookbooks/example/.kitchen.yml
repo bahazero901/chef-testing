@@ -1,6 +1,6 @@
 ---
 driver:
-  name: vagrant
+  name: docker
 
 provisioner:
   name: chef_zero
@@ -13,13 +13,13 @@ verifier:
   name: inspec
 
 platforms:
-  - name: ubuntu-16.04
+#  - name: ubuntu-16.04
   - name: centos-7
 
 suites:
   - name: default
     run_list:
-      - recipe[example::default]
+      - recipe[example::test]
     verifier:
       inspec_tests:
         - test/integration/default

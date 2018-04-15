@@ -9,7 +9,8 @@
   end
 end
 
-ip = '10.10.0.0/24' 
-mask = netmask(ip) # here we use the library method as define in the class Chef::Recipe (extending Recipe Chef)
-Chef::Log.info("Netmask of #{ip}: #{mask}") 
+execute 'setenforce 0' do
+  only_if 'getenforce | grep Enforcing'
+end
+
 
