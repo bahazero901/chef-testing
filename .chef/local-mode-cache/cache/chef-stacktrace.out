@@ -1,6 +1,6 @@
-Generated at 2018-04-14 15:58:35 -0700
-NoMethodError: undefined method `example_webpage' for #<Chef::Recipe:0x00000000048f5828>
-/home/vagrant/chef-repo/cookbooks/example/recipes/mywebsite.rb:1:in `from_file'
+Generated at 2018-04-14 22:59:41 -0700
+NoMethodError: undefined method `appsite_website' for #<Chef::Recipe:0x00000000046e75e0>
+/home/vagrant/chef-repo/cookbooks/appsite/recipes/default.rb:14:in `from_file'
 /opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/chef-13.8.5/lib/chef/mixin/from_file.rb:30:in `instance_eval'
 /opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/chef-13.8.5/lib/chef/mixin/from_file.rb:30:in `from_file'
 /opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/chef-13.8.5/lib/chef/run_context.rb:362:in `load_recipe_file'
