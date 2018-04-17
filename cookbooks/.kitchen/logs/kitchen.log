@@ -1,0 +1,29 @@
+I, [2018-04-16T22:48:03.559443 #14672]  INFO -- Kitchen: -----> Starting Kitchen (v1.20.0)
+E, [2018-04-16T22:48:03.568538 #14672] ERROR -- Kitchen: ------Exception-------
+E, [2018-04-16T22:48:03.568642 #14672] ERROR -- Kitchen: Class: Kitchen::UserError
+E, [2018-04-16T22:48:03.568682 #14672] ERROR -- Kitchen: Message: Kitchen YAML file /home/vagrant/chef-repo/cookbooks/.kitchen.yml does not exist.
+E, [2018-04-16T22:48:03.568710 #14672] ERROR -- Kitchen: ----------------------
+E, [2018-04-16T22:48:03.568733 #14672] ERROR -- Kitchen: ------Backtrace-------
+E, [2018-04-16T22:48:03.568756 #14672] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.20.0/lib/kitchen/loader/yaml.rb:65:in `read'
+E, [2018-04-16T22:48:03.568779 #14672] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.20.0/lib/kitchen/config.rb:152:in `data'
+E, [2018-04-16T22:48:03.568808 #14672] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.20.0/lib/kitchen/config.rb:131:in `suites'
+E, [2018-04-16T22:48:03.568832 #14672] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.20.0/lib/kitchen/config.rb:182:in `filter_instances'
+E, [2018-04-16T22:48:03.568854 #14672] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.20.0/lib/kitchen/config.rb:141:in `build_instances'
+E, [2018-04-16T22:48:03.568875 #14672] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.20.0/lib/kitchen/config.rb:117:in `instances'
+E, [2018-04-16T22:48:03.568896 #14672] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.20.0/lib/kitchen/command.rb:112:in `filtered_instances'
+E, [2018-04-16T22:48:03.568917 #14672] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.20.0/lib/kitchen/command.rb:142:in `parse_subcommand'
+E, [2018-04-16T22:48:03.568937 #14672] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.20.0/lib/kitchen/command/action.rb:35:in `block in call'
+E, [2018-04-16T22:48:03.569009 #14672] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/2.4.0/benchmark.rb:293:in `measure'
+E, [2018-04-16T22:48:03.569036 #14672] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.20.0/lib/kitchen/command/action.rb:34:in `call'
+E, [2018-04-16T22:48:03.569058 #14672] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.20.0/lib/kitchen/cli.rb:52:in `perform'
+E, [2018-04-16T22:48:03.569084 #14672] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.20.0/lib/kitchen/cli.rb:193:in `block (2 levels) in <class:CLI>'
+E, [2018-04-16T22:48:03.569106 #14672] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/thor-0.19.1/lib/thor/command.rb:27:in `run'
+E, [2018-04-16T22:48:03.569126 #14672] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/thor-0.19.1/lib/thor/invocation.rb:126:in `invoke_command'
+E, [2018-04-16T22:48:03.569147 #14672] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/thor-0.19.1/lib/thor.rb:359:in `dispatch'
+E, [2018-04-16T22:48:03.569167 #14672] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/thor-0.19.1/lib/thor/base.rb:440:in `start'
+E, [2018-04-16T22:48:03.569188 #14672] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.20.0/bin/kitchen:13:in `block in <top (required)>'
+E, [2018-04-16T22:48:03.569209 #14672] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.20.0/lib/kitchen/errors.rb:171:in `with_friendly_errors'
+E, [2018-04-16T22:48:03.569229 #14672] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.20.0/bin/kitchen:13:in `<top (required)>'
+E, [2018-04-16T22:48:03.569250 #14672] ERROR -- Kitchen: /bin/kitchen:250:in `load'
+E, [2018-04-16T22:48:03.569270 #14672] ERROR -- Kitchen: /bin/kitchen:250:in `<main>'
+E, [2018-04-16T22:48:03.569296 #14672] ERROR -- Kitchen: ----End Backtrace-----
